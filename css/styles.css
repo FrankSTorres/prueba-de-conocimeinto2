@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, sans-serif;
+    background-image: url(../imagenes/background2.jpg); 
+    background-size: cover; /* Ajusta la imagen para cubrir todo el área sin distorsionar */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+    height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+/* se crean los estilos para la tabla bde formulario */
+#city-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#city-form label {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+#city-form input, #city-form button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+}
+
+#city-form input {
+    width: 200px;
+}
+
+#city-form button {
+    background-color: #00caf8;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#city-form button:hover {
+    background-color: #0096b7;
+}
+/* estilo para la tabla*/
+#weather-data {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#weather-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+}
+
+#weather-table th, #weather-table td {
+    border: 2px solid #00caf8;
+    padding: 10px;
+    text-align: center;
+}
+/* espacio para el mapa*/
+#map {
+    width: 500px;
+    height: 300px;
+    border: 3px solid #ccc;
+    margin-top: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #00caf8;
+    text-decoration: none;
+}
